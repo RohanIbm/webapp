@@ -9,9 +9,10 @@ namespace WebApp.Pages
 {
     public class IndexModel : PageModel
     {
+        public string Time;
         public void OnGet()
         {
-
+            Time = DateTime.Now.ToShortTimeString();
         }
     }
 }
